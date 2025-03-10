@@ -32,7 +32,7 @@ class ArticleController extends Controller
     {
         $validated = $request->validate();
         $article = Article::create();
-        return redirect()->route('articles.show', $article);
+        return redirect()->route('articles.show');
     }
 
     /**
